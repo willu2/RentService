@@ -22,9 +22,7 @@ public class ItemPosition implements Comparable<ItemPosition>{
     private String itemName;
     private int distance;
     private int distToSchool;
-
     private int distToKinderGargen;
-
     private int distanceToPlayRoom;
     private int distanceToHOspital;
     private Integer price;
