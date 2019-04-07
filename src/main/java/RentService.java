@@ -3,6 +3,6 @@ public class RentService {
 
         DataHelper dataHelper = new DataHelper();
 
-        dataHelper.showAllData();
+        dataHelper.findByPrice(300);
     }
 }
