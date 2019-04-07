@@ -54,6 +54,9 @@ public class ShowMenu {
                     dist = menu.menuTotalPriceEnter();
                     dataHelper.findByPriceAndDistToHospital(price, dist);
                     break;
+                case 7:
+                    dataHelper.sortItemList();
+                    break;
                 case 8:
                     exit = true;
                     break;

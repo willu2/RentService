@@ -19,7 +19,7 @@ public class ItemPosition implements Comparable<ItemPosition>{
     }
 
     private ItemType itemType;
-    private String itemName;
+    private String itemStatus = "Active";
     private int distance;
     private int distToSchool;
     private int distToKinderGargen;
@@ -59,12 +59,12 @@ public class ItemPosition implements Comparable<ItemPosition>{
     }
 
 
-    public String getItemName() {
-        return itemName;
+    public String getItemStatus() {
+        return itemStatus;
     }
 
-    public void setItemName(String itemName) {
-        this.itemName = itemName;
+    public void setItemStatus(String itemStatus) {
+        this.itemStatus = itemStatus;
     }
 
     public ItemType getItemType() {

@@ -49,7 +49,7 @@ public class MenuBuilder {
 
         try {
             while (visitorPrice <= 0 ){
-                System.out.println("Enter your money count (int number) ? : ");
+                
                 try {
                     BufferedReader inPrice = new BufferedReader(new InputStreamReader(System.in));
                     visitorPrice = Integer.parseInt(inPrice.readLine());

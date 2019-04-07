@@ -2,27 +2,18 @@ import java.util.*;
 
 public class DataHelper {
 
-    //private List structureList;// = new ArrayList();
     private List allDbList;// = new ArrayList();
 
     public RandomHelper r = new RandomHelper();
 
     public DataHelper() {
-       /* this.structureList = new ArrayList();
-        createStructure();*/
 
         this.allDbList = new ArrayList<ItemPosition>();
         addAllData();
 
     }
 
-    /*private void createStructure(){
-        structureList.add("School");
-        structureList.add("KinderGargen");
-        structureList.add("PlayRoom");
-        structureList.add("Hospital");
-    }
-*/
+
     private void addAllData(){
         ItemPosition itemPosition;
         Random random = new Random();
@@ -107,14 +98,11 @@ public class DataHelper {
         System.out.print(" ||_Dist To Kinder Gargen: > " + item.getDistToKinderGargen() + " m");
         System.out.print(" ||_Dist To Play Room: > " + item.getDistanceToPlayRoom() + " m");
         System.out.print(" ||_Dist To Hospital: > " + item.getDistanceToHOspital() + " m");
-        System.out.print(" ||_Rent Status: > " + item.isStatus());
+        System.out.print(" ||_Rent Status: > " + item.getItemStatus());
         System.out.print(" ||_price: > " + item.getPrice() + " $");
         System.out.println();
     }
 
-    /*public List getStructureList() {
-        return structureList;
-    }*/
 
     public List getAllDbList() {
         return allDbList;
