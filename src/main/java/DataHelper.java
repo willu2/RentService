@@ -59,6 +59,31 @@ public class DataHelper {
         }
     }
 
+    public void findByPriceAndDistToSchool(int price, int dist){
+        for (Iterator<ItemPosition> it = allDbList.iterator(); it.hasNext(); ) {
+            ItemPosition item = it.next();
+            if(item.getPrice() <= price && item.getDistToSchool() <= dist){
+                printItemList(item);
+            }
+        }
+    }
+    public void findByPriceAndDistToKinderGargen(int price, int dist){
+        for (Iterator<ItemPosition> it = allDbList.iterator(); it.hasNext(); ) {
+            ItemPosition item = it.next();
+            if(item.getPrice() <= price && item.getDistToKinderGargen() <= dist){
+                printItemList(item);
+            }
+        }
+    }
+    public void findByPriceAndDistToHospital(int price, int dist){
+        for (Iterator<ItemPosition> it = allDbList.iterator(); it.hasNext(); ) {
+            ItemPosition item = it.next();
+            if(item.getPrice() <= price && item.getDistanceToHOspital() <= dist){
+                printItemList(item);
+            }
+        }
+    }
+
     public void sortItemList(){
         Collections.sort(allDbList);
         iterationPrint(allDbList);
