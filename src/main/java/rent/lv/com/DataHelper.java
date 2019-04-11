@@ -1,8 +1,10 @@
+package rent.lv.com;
+
 import java.util.*;
 
 public class DataHelper {
 
-    private List allDbList;// = new ArrayList();
+    private List allDbList;
 
     public RandomHelper r = new RandomHelper();
 
@@ -10,10 +12,9 @@ public class DataHelper {
 
         this.allDbList = new ArrayList<ItemPosition>();
         addAllData();
-
     }
 
-
+    //create all data
     private void addAllData(){
         ItemPosition itemPosition;
         Random random = new Random();
@@ -25,6 +26,7 @@ public class DataHelper {
         }
     }
 
+    //print all data
     public void showAllData(){
         for (Iterator<ItemPosition> it = allDbList.iterator(); it.hasNext(); ) {
             ItemPosition item = it.next();
@@ -32,6 +34,7 @@ public class DataHelper {
         }
     }
 
+    //find position by rent is on
     public void findByRent(){
         for (Iterator<ItemPosition> it = allDbList.iterator(); it.hasNext(); ) {
             ItemPosition item = it.next();
@@ -80,11 +83,6 @@ public class DataHelper {
         iterationPrint(allDbList);
     }
 
-    public void sortReverseItemList(){
-        Collections.sort(allDbList, Collections.reverseOrder());
-        iterationPrint(allDbList);
-    }
-
     public void iterationPrint(List<ItemPosition> itemDB){
         for (Iterator<ItemPosition> it = itemDB.iterator(); it.hasNext(); ) {
             ItemPosition item = it.next();
@@ -101,10 +99,5 @@ public class DataHelper {
         System.out.print(" ||_Rent Status: > " + item.getItemStatus());
         System.out.print(" ||_price: > " + item.getPrice() + " $");
         System.out.println();
-    }
-
-
-    public List getAllDbList() {
-        return allDbList;
     }
 }

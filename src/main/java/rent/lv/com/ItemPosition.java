@@ -1,3 +1,5 @@
+package rent.lv.com;
+
 import java.util.Random;
 
 public class ItemPosition implements Comparable<ItemPosition>{
@@ -58,37 +60,16 @@ public class ItemPosition implements Comparable<ItemPosition>{
         return distanceToHOspital;
     }
 
-
     public String getItemStatus() {
         return itemStatus;
-    }
-
-    public void setItemStatus(String itemStatus) {
-        this.itemStatus = itemStatus;
     }
 
     public ItemType getItemType() {
         return itemType;
     }
 
-    public void setItemType(ItemType itemType) {
-        this.itemType = itemType;
-    }
-
     public Integer getPrice() {
         return price;
-    }
-
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public int getDistance() {
-        return distance;
-    }
-
-    public void setDistance(int distance) {
-        this.distance = distance;
     }
 
     public boolean isStatus() {
@@ -99,8 +80,6 @@ public class ItemPosition implements Comparable<ItemPosition>{
     public String toString() {
         return "Rent [price=" + price + "]";
     }
-
-
 
     @Override
     public int compareTo(ItemPosition o) {

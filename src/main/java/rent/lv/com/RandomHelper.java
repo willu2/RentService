@@ -1,3 +1,5 @@
+package rent.lv.com;
+
 import java.util.Random;
 
 public class RandomHelper {

@@ -1,3 +1,5 @@
+package rent.lv.com;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -18,30 +20,11 @@ public class MenuBuilder {
         System.out.println("Enter position :> ");
     }
 
-    public void clarityShow(){
-        System.out.println("Enter clarity: ");
-        System.out.print(" 1 :> I |*|");
-        System.out.print(" 2 :> IF |*|");
-        System.out.print(" 3 :> SI |*|");
-        System.out.print(" 4 :> VS |*|");
-        System.out.println(" 5 :> VVS ");
-    }
-
-    public void typeShow(){
-        System.out.println("Enter value: ");
-        System.out.print(" 1 :> PRECIOS |*|");
-        System.out.println(" 2 :> HALFPRECIOUS |*|");
-    }
-
     public void priceEnter(){
         System.out.println("Enter your money :");
     }
     public void distEnter(){
         System.out.println("Enter distance :");
-    }
-
-    public void sortShow(){
-        System.out.println("Sort by price:");
     }
 
     public int menuTotalPriceEnter(){
